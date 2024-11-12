@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Password Strength</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="container">
+  <label for="username">Username</label>
+  <input type="text" id="username" name="username" required>
+
+  <label for="password">Password</label>
+  <input type="password" id="password" name="password" required>
+
+  <div class="power-container">
+    <div id="power-point"></div>
+  </div>
+  <p id="passwordStrength" style="display: none;"></p>
+
+  <div id="passwordValidation" class="password-validation">
+    <ul>
+      <li id="lengthCheck">Password must be between 8 and 20 characters</li>
+      <li id="numberCheck">Contains at least one number</li>
+      <li id="lowerCaseCheck">Contains at least one lowercase letter</li>
+      <li id="upperCaseCheck">Contains at least one uppercase letter</li>
+      <li id="commonPasswordCheck" style="display: none"></li>
+      <li id="usernameCheck" style="display: none"></li>
+      <li id="emptyCheck" style="display: none"></li>
+    </ul>
+  </div>
+
+  <button type="submit">Log in</button>
+</div>
+
+<script type="module" src="js/app.js"></script>
+
+</body>
+
+</html>
